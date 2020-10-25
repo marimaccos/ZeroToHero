@@ -1,0 +1,126 @@
+/*Cria uma fonte com um nome*/
+@font-face {
+    font-family: Futhark;
+    src: url(../fonts/RUNE.TTF);
+}
+
+header, 
+footer, 
+nav {
+    /* Textura do cabeçalho, rodapé e menu */
+    background-image: url("../images/texture.png");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/textureBG.png");
+}
+
+header {
+    color: #ddd;
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    height: 50px;
+    text-align: center;
+    color: #666;
+    padding-top: 35px;
+    font-family: Futhark;
+}
+
+h1 {
+    font-size: 42pt;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    color: #666;
+    font-family: Futhark;
+    text-decoration: none;
+}
+
+nav {
+    position: sticky;
+    position: -webkit-sticky; /*Para funcionar em versões do Chrome*/
+        
+    border: 2px solid;
+    border-color: #999 #999 #ccc #ccc;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li {
+    height: 50px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    list-style: none;
+
+    transition: all ease 0.3s; /*Transição no sublinhado*/
+}
+
+li:hover {
+    border-color: #ccc;
+}
+
+li:hover a {
+    color: #ccc;
+}
+
+li a {
+    font-size: 32pt;
+}
+
+.god-section {
+    width: 50vw;
+    height: 100vh;
+    /*Margens top bottom = 0, left right = auto*/
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 150px;
+    text-align: justify;
+
+    font-family: Futhark;
+}
+
+.god-section img {
+    height: 20vmax;
+    margin-bottom: 5vh;
+}
+
+.god-section p {
+    font-size: 1.3em;
+}
+
+.parallax {
+    background-image: url(../images/foto1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 90px;
+    background-attachment: fixed; /*Fixa a imagem no fundo*/
+}
+
+.parallax.final {
+    background-image: url(../images/foto3.jpg);
+    background-position: center;
+}
