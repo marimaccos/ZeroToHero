@@ -4,6 +4,12 @@
     src: url(../fonts/RUNE.TTF);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 header, 
 footer, 
 nav {
@@ -123,4 +129,12 @@ li a {
 .parallax.final {
     background-image: url(../images/foto3.jpg);
     background-position: center;
+}
+
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    background-color: #ddd;
 }
